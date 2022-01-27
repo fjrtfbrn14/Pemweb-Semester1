@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta Tag -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biaya Parkir || Welcome</title>
+
+    <!-- Style CSS -->
+    <style>
+        fieldset{
+            width: max-content;
+            background-color: rgb(218, 168, 210);
+            margin: auto;
+            display: flex;
+        }
+        h4{
+            text-align: center;
+        }
+    </style>
+
+    <!-- Script JS -->
+    <script>
+        function hitungParkir(){
+            let jamMasuk = document.getElementById("masuk").value;
+            let jamKeluar = document.getElementById("keluar").value;
+            let selisih = jamKeluar - jamMasuk
+            let biaya = 0;
+            const TARIF_AWAL = 3000;
+            const TARIF_PERJAM = 1000;
+            if(selisih <= 2){
+                biaya = TARIF_AWAL;
+            }
+            else{
+                let tambahanJam = selisih -2 ;
+                biaya = TARIF_AWAL + (TARIF_PERJAM * tambahanJam)
+            }
+            let areaBiaya = document.getElementById("biaya");
+            areaBiaya.innerHTML = "BIAYA PARKIR RP. " + biaya;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Content -->
+    <fieldset>
+        <legend>
+            <h3 class="center">Menghitung Biaya Parkir</h3><br><br>
+            Masuk Parkir : <input type="number" value="" size="10" id="masuk"><br><br>
+            Keluar Parkir : <input type="number" value="" size="10" id="keluar"><br><br>
+            <button onclick="hitungParkir()">Biaya Parkir</button> : <span id="biaya"></span>
+        </legend>
+    </fieldset>
+</body>
+</html>

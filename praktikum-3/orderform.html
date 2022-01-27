@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Meta Tag -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Form || Welcome</title>
+
+  <!-- CSS Style -->
+  <link href="orderform.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Content -->
+  <div class="container">
+      <div class="title">
+          <h2 style="text-align: center;">Product Order Form</h2>
+      </div>
+    <div class="d-flex">
+      <form action="" method="">
+        <label>
+          <span class="fname">First Name <span class="required">*</span></span>
+          <input type="text" name="fname">
+        </label>
+        <label>
+          <span class="lname">Last Name <span class="required">*</span></span>
+          <input type="text" name="lname">
+        </label>
+        <label>
+          <span>Phone <span class="required">*</span></span>
+          <input type="tel" name="city"> 
+        </label>
+        <label>
+          <span>Email Address <span class="required">*</span></span>
+          <input type="email" name="city"> 
+        </label>
+        <label>
+          <span>Company Name (Optional)</span>
+          <input type="text" name="cn">
+        </label>
+        <label>
+          <span>Street Address <span class="required">*</span></span>
+          <input type="text" name="houseadd">
+        </label>
+        <label>
+          <span>Title Here :</span>
+          <input type="text" placeholder="MacBook Air $800">
+        </label>
+        <label>
+          <span>Description</span>
+            <textarea cols="20" rows="3" placeholder="Year: 2009                 Model:                 Condition: Mint"></textarea>
+        </label>
+        <label>
+          <span>Account Number</span>
+            <input type="text" placeholder="123-456-789-0">
+        </label>
+        <label>            
+          <span>Account Holder<span class="required">*</span></span>
+            <input type="text" placeholder="Name Here">
+        </label>
+        <label>
+          
+        </label>
+        <label>
+          <span>Send To Mobile Phone<span class="required">*</span></span>
+            <input type="text" placeholder="1234567890, 0987654321">
+        </label>
+        <label>
+          <span>Send To Mobile Email<span class="required">*</span></span>
+            <input type="text" placeholder="example1@email.com">
+        </label>
+      </form>
+      <div class="Yorder">
+        <table>
+          <tr>
+            <th colspan="2">Your order</th>
+          </tr>
+          <tr>
+            <td>Arter Blanket x 2(Qty)</td>
+            <td>Rp4.300.000</td>
+          </tr>
+          <tr>
+              <td>Shipping</td>
+              <td>Rp50.000</td>
+          </tr>
+          <tr>
+            <td>Subtotal</td>
+            <td>Rp4.350.000</td>
+          </tr>
+        </table><br>
+        <div>
+          <input type="radio" name="dbt" value="dbt" checked> Direct Bank Transfer
+        </div>
+        <p>
+            Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+        </p>
+        <div>
+          <input type="radio" name="dbt" value="cd"> Cash on Delivery
+        </div>
+        <div>
+          <input type="radio" name="dbt" value="cd"> Credit Card <span>
+          <img src="https://www.logolynx.com/images/logolynx/c3/c36093ca9fb6c250f74d319550acac4d.jpeg" alt="" width="50">
+          </span>
+        </div>
+        <button type="button">Place Order</button>
+      </div><!-- Yorder -->
+      </div>
+    </div>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Meta Tag -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart || Welcome</title>
+
+  <!-- Style CSS -->
+  <link href="style.css" rel="stylesheet">
+
+</head>
+  <!-- Content -->
+<body style="background-color: rgb(41, 79, 126)"> 
+    <div class="container">
+        <div class="payment_details">
+          <h1>Payment Information</h1>
+          <div class="details_card">
+            <div class="name_address">
+              <div class="first_lastName">
+                <input type="text" placeholder="First Name" />
+                <input type="text" placeholder="Last Name" />
+              </div>
+              <div class="address">
+                <input type="text" onkeyup="change()" id="put" placeholder="Address" />
+                <input type="text" placeholder="City" />
+                <input type="number" placeholder="Pos Code" />
+              </div>
+            </div>
+            <h1>Shipping Details</h1>
+            <div class="shipping_card">
+              <div class="new_card">
+                <h4>Same as Personal</h4>
+                <p id="output">Jl. Raya Muchtar No.12 RT 04/RW 01, Sawangan Baru, Sawangan, Depok</p>
+                <p>16511</p>
+              </div>
+              <div class="add_savedcard">
+                <h4>Saved Address</h4>
+                <p>Jl. Sawo V RT 01/RW 09, Karangasem, Laweyan, Surakarta</p>
+                <p>57145</p>
+              </div>
+            </div>
+            <div class="proced_payment">
+              <a href="">Procced to Payment</a>
+            </div>
+          </div>
+        </div>
+        <div class="order_summary">
+          <h1>Order Summary</h1>
+          <div class="summary_card">
+            <div class="card_item">
+              <div class="product_img">
+                <img src="https://cdn.shopify.com/s/files/1/0336/5928/9645/products/ARTERBlanketinCharcoalGrey_37bdc0a9-4d44-43ad-aea9-8b72102a3095_300x300.jpg?v=1633417918" alt="" />
+              </div>
+              <div class="product_info">
+                <h1>Arter Blanket Set</h1>
+                <p>Single Plus Size (165 x 225)</p>
+                <div class="close-btn">
+                  <i class="fa fa-close"></i>
+                </div>
+                <div class="product_rate_info">
+                  <h1>Rp2.950.000</h1>
+                  <span class="pqt-minus">-</span>
+                  <span class="pqt">1</span>
+                  <span class="pqt-plus">+</span>
+                </div>
+              </div>
+            </div>
+            <div class="card_item">
+              <div class="product_img">
+                <img src="https://s1.bukalapak.com/img/117875574/w-1000/JAKET_WATERPROOF_SWEDE_TEBAL_NAVI.jpg" alt="" />
+              </div>
+              <div class="product_info">
+                <h1>Arter Extra Cover Outer</h1>
+                <p>Single Plus Size (165 x 225)</p>
+                <div class="close-btn">
+                  <i class="fa fa-close"></i>
+                </div>
+                <div class="product_rate_info">
+                  <h1>Rp1.350.000</h1>
+                  <span class="pqt-minus">-</span>
+                  <span class="pqt">1</span>
+                  <span class="pqt-plus">+</span>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="order_price">
+              <p>Order Summary</p>
+              <h4>Rp4.300.000</h4>
+            </div>
+            <div class="order_service">
+              <p>Additional Service</p>
+              <h4>Rp50.000</h4>
+            </div>
+            <div class="order_total">
+              <p>Total Amount</p>
+              <h4>Rp4.350.000</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+</html>

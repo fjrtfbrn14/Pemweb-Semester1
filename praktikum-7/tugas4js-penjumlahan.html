@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta Tag -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan || Welcome</title>
+
+    <!-- Script JS -->
+    <script>
+        function hitung(){
+            let x = Number(document.getElementById("bil1").value);
+            let y = Number(document.getElementById("bil2").value);
+            let z = x + y;
+            document.getElementById("bil3").value=z;
+        }
+    </script>
+
+    <!-- Style CSS -->
+    <style>
+        fieldset{
+            width: max-content;
+            background-color: rgb(226, 197, 188);
+            margin: auto;
+            display: flex;
+        }
+        h4{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Content -->
+    <fieldset>
+        <legend>
+            <h3 class>Penjumlahan</h3><br><br>
+            <form id="form1">
+                <input type="text" id="bil1" value="0" onchange="hitung()"/>
+                <b>+</b><input type="text" id="bil2" value="0" onchange="hitung()"/>
+                <b>=</b><input type="text" id="bil3" value="0"/>
+            </form>
+        </legend>
+    </fieldset>
+</body>
+
+</html>

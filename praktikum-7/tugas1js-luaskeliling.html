@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta Tag -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luas & Keliling Lingkaran</title>
+
+    <!-- Style CSS -->
+    <style>
+        fieldset{
+            width: max-content;
+            background-color: rgb(218, 214, 168);
+            margin: auto;
+            display: flex;
+        }
+        h4{
+            text-align: center;
+        }
+    </style>
+
+    <!-- Script JS -->
+    <script>
+        function hitung(){
+            const PHI = 3.14;
+            let jari = document.getElementById("bil1").value;
+            console.log("bilangan 1 : " + jari);
+            let luas = PHI * jari * jari;
+            let kll = 2.0 * PHI * jari;
+            console.log("luas : " + luas);
+            console.log("keliling : " + kll);
+            let area_hasil = document.getElementById("hasil");
+            area_hasil.innerHTML = "<br>Luas : " + luas + "<br>Keliling : " + kll;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Content -->
+    <fieldset>
+    <legend>
+        <h3 class="center">Menghitung Luas & Keliling Lingkaran</h3><br><br>
+        Masukan Jari-Jari Lingkaran :
+        <input type="number" value="" id="bil1" size="7">
+        <button onclick="hitung()">Hitung</button>
+        <br><br>Hasil : <span id="hasil"></span>
+    </legend>
+    </fieldset>
+</body>
+</html>
